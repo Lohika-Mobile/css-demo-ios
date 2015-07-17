@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		1EFE1C6E1B56966000396594 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EFE1C6D1B56966000396594 /* AppDelegate.swift */; };
-		1EFE1C701B56966000396594 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EFE1C6F1B56966000396594 /* MasterViewController.swift */; };
+		1EFE1C701B56966000396594 /* SelfFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EFE1C6F1B56966000396594 /* SelfFeedViewController.swift */; };
 		1EFE1C721B56966000396594 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EFE1C711B56966000396594 /* DetailViewController.swift */; };
 		1EFE1C751B56966000396594 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EFE1C731B56966000396594 /* Main.storyboard */; };
 		1EFE1C771B56966000396594 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EFE1C761B56966000396594 /* Images.xcassets */; };
 		1EFE1C7A1B56966000396594 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1EFE1C781B56966000396594 /* LaunchScreen.xib */; };
 		1EFE1C861B56966000396594 /* CSSDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EFE1C851B56966000396594 /* CSSDemoTests.swift */; };
+		1EFE1D2E1B59707A00396594 /* SelfFeedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EFE1D2D1B59707A00396594 /* SelfFeedCollectionViewCell.swift */; };
+		1EFE1D301B5977DB00396594 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EFE1D2F1B5977DB00396594 /* LoginViewController.swift */; };
+		8E0FA7BE29034C452D6A3771 /* Pods_CSSDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A2C5BA0E003E9523A56214E /* Pods_CSSDemo.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +33,7 @@
 		1EFE1C681B56966000396594 /* CSSDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CSSDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EFE1C6C1B56966000396594 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1EFE1C6D1B56966000396594 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1EFE1C6F1B56966000396594 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		1EFE1C6F1B56966000396594 /* SelfFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfFeedViewController.swift; sourceTree = "<group>"; };
 		1EFE1C711B56966000396594 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		1EFE1C741B56966000396594 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1EFE1C761B56966000396594 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -38,6 +41,11 @@
 		1EFE1C7F1B56966000396594 /* CSSDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CSSDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EFE1C841B56966000396594 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1EFE1C851B56966000396594 /* CSSDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSSDemoTests.swift; sourceTree = "<group>"; };
+		1EFE1D2D1B59707A00396594 /* SelfFeedCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelfFeedCollectionViewCell.swift; sourceTree = "<group>"; };
+		1EFE1D2F1B5977DB00396594 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		22662A5B89A933D73DE3DAE4 /* Pods-CSSDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSSDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CSSDemo/Pods-CSSDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		7A2C5BA0E003E9523A56214E /* Pods_CSSDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CSSDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8367AF4A7A56C63A92F48C59 /* Pods-CSSDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSSDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-CSSDemo/Pods-CSSDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E0FA7BE29034C452D6A3771 /* Pods_CSSDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +73,8 @@
 				1EFE1C6A1B56966000396594 /* CSSDemo */,
 				1EFE1C821B56966000396594 /* CSSDemoTests */,
 				1EFE1C691B56966000396594 /* Products */,
+				434ED883399BFF46CDEDF52A /* Pods */,
+				380A5698671B6E792549CEDD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,7 +91,9 @@
 			isa = PBXGroup;
 			children = (
 				1EFE1C6D1B56966000396594 /* AppDelegate.swift */,
-				1EFE1C6F1B56966000396594 /* MasterViewController.swift */,
+				1EFE1C6F1B56966000396594 /* SelfFeedViewController.swift */,
+				1EFE1D2D1B59707A00396594 /* SelfFeedCollectionViewCell.swift */,
+				1EFE1D2F1B5977DB00396594 /* LoginViewController.swift */,
 				1EFE1C711B56966000396594 /* DetailViewController.swift */,
 				1EFE1C731B56966000396594 /* Main.storyboard */,
 				1EFE1C761B56966000396594 /* Images.xcassets */,
@@ -115,6 +128,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		380A5698671B6E792549CEDD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7A2C5BA0E003E9523A56214E /* Pods_CSSDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		434ED883399BFF46CDEDF52A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				22662A5B89A933D73DE3DAE4 /* Pods-CSSDemo.debug.xcconfig */,
+				8367AF4A7A56C63A92F48C59 /* Pods-CSSDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,9 +152,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1EFE1C891B56966000396594 /* Build configuration list for PBXNativeTarget "CSSDemo" */;
 			buildPhases = (
+				2CD8ABD4C08FD6FCC9FE4DAB /* Check Pods Manifest.lock */,
 				1EFE1C641B56966000396594 /* Sources */,
 				1EFE1C651B56966000396594 /* Frameworks */,
 				1EFE1C661B56966000396594 /* Resources */,
+				F842ED9572984A4DFE2AA984 /* Embed Pods Frameworks */,
+				32CBC0D626C1953EC960FAF5 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -210,13 +243,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2CD8ABD4C08FD6FCC9FE4DAB /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		32CBC0D626C1953EC960FAF5 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CSSDemo/Pods-CSSDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F842ED9572984A4DFE2AA984 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CSSDemo/Pods-CSSDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1EFE1C641B56966000396594 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EFE1D2E1B59707A00396594 /* SelfFeedCollectionViewCell.swift in Sources */,
 				1EFE1C721B56966000396594 /* DetailViewController.swift in Sources */,
-				1EFE1C701B56966000396594 /* MasterViewController.swift in Sources */,
+				1EFE1C701B56966000396594 /* SelfFeedViewController.swift in Sources */,
+				1EFE1D301B5977DB00396594 /* LoginViewController.swift in Sources */,
 				1EFE1C6E1B56966000396594 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -344,6 +427,7 @@
 		};
 		1EFE1C8A1B56966000396594 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22662A5B89A933D73DE3DAE4 /* Pods-CSSDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CSSDemo/Info.plist;
@@ -354,6 +438,7 @@
 		};
 		1EFE1C8B1B56966000396594 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8367AF4A7A56C63A92F48C59 /* Pods-CSSDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CSSDemo/Info.plist;
@@ -415,6 +500,7 @@
 				1EFE1C8B1B56966000396594 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1EFE1C8C1B56966000396594 /* Build configuration list for PBXNativeTarget "CSSDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +509,7 @@
 				1EFE1C8E1B56966000396594 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

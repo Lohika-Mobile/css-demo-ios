@@ -20,6 +20,10 @@
 	<string>????</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>InstagramAppClientId</key>
+	<string>d4bcfe38e9e044a6a4f8b1665b08268e</string>
+	<key>InstagramAppRedirectURL</key>
+	<string>http://killobatt.tumblr.com</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>UILaunchStoryboardName</key>
