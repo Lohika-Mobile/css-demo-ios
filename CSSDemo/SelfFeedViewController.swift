@@ -78,13 +78,15 @@ class SelfFeedViewController: UICollectionViewController {
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "showDetail" {
-//            if let indexPath = self.tableView.indexPathForSelectedRow() {
-//                let object = objects[indexPath.row] as! NSDate
-//                let controller = (segue.destinationViewController as! UINavigationController).topViewController as! DetailViewController
-//                controller.detailItem = object
-//                controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem()
-//                controller.navigationItem.leftItemsSupplementBackButton = true
-//            }
+            if let
+                cell = sender as? UICollectionViewCell,
+                indexPath = self.collectionView?.indexPathForCell(cell) {
+                    let media = self.mediaObjects[indexPath.row]
+                    let controller = (segue.destinationViewController as! UINavigationController).topViewController as! MediaDetailViewController
+                    controller.media = media
+                    controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem()
+                    controller.navigationItem.leftItemsSupplementBackButton = true
+            }
         }
     }
     
