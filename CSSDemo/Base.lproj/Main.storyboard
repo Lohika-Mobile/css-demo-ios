@@ -50,7 +50,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <segue destination="Pf6-Iz-LSF" kind="show" id="PhY-Uo-Zbz"/>
+                                            <segue destination="Pf6-Iz-LSF" kind="show" identifier="showLikes" id="PhY-Uo-Zbz"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BKz-z6-EQx">
@@ -65,7 +65,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <segue destination="Oev-a9-sge" kind="show" id="azT-wa-ncT"/>
+                                            <segue destination="Oev-a9-sge" kind="show" identifier="showComments" id="azT-wa-ncT"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QP0-pn-fzn">
@@ -144,7 +144,7 @@
         <!--Likes-->
         <scene sceneID="0EL-hp-0ke">
             <objects>
-                <tableViewController title="Likes" id="Pf6-Iz-LSF" sceneMemberID="viewController">
+                <tableViewController title="Likes" id="Pf6-Iz-LSF" customClass="LikesViewController" customModule="CSSDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="aUd-Qs-zv5">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -170,7 +170,7 @@
         <!--Comments-->
         <scene sceneID="Lkk-Ub-zmM">
             <objects>
-                <tableViewController title="Comments" id="Oev-a9-sge" sceneMemberID="viewController">
+                <tableViewController title="Comments" id="Oev-a9-sge" customClass="CommentsViewController" customModule="CSSDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="5zs-2l-0NI">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

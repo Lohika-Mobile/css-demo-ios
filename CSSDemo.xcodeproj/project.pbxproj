@@ -16,6 +16,10 @@
 		1EFE1D2E1B59707A00396594 /* SelfFeedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EFE1D2D1B59707A00396594 /* SelfFeedCollectionViewCell.swift */; };
 		1EFE1D301B5977DB00396594 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EFE1D2F1B5977DB00396594 /* LoginViewController.swift */; };
 		1EFE1D321B59B9D800396594 /* MediaDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EFE1D311B59B9D800396594 /* MediaDetailViewController.swift */; };
+		1EFE1D351B59C08100396594 /* CommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EFE1D341B59C08100396594 /* CommentsViewController.swift */; };
+		1EFE1D371B59C08F00396594 /* LikesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EFE1D361B59C08F00396594 /* LikesViewController.swift */; };
+		1EFE1D3A1B59C0D700396594 /* LikeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EFE1D391B59C0D700396594 /* LikeTableViewCell.swift */; };
+		1EFE1D3C1B59C0E200396594 /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EFE1D3B1B59C0E200396594 /* CommentTableViewCell.swift */; };
 		8E0FA7BE29034C452D6A3771 /* Pods_CSSDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A2C5BA0E003E9523A56214E /* Pods_CSSDemo.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -43,6 +47,10 @@
 		1EFE1D2D1B59707A00396594 /* SelfFeedCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelfFeedCollectionViewCell.swift; sourceTree = "<group>"; };
 		1EFE1D2F1B5977DB00396594 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		1EFE1D311B59B9D800396594 /* MediaDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaDetailViewController.swift; sourceTree = "<group>"; };
+		1EFE1D341B59C08100396594 /* CommentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentsViewController.swift; sourceTree = "<group>"; };
+		1EFE1D361B59C08F00396594 /* LikesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LikesViewController.swift; sourceTree = "<group>"; };
+		1EFE1D391B59C0D700396594 /* LikeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LikeTableViewCell.swift; sourceTree = "<group>"; };
+		1EFE1D3B1B59C0E200396594 /* CommentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
 		22662A5B89A933D73DE3DAE4 /* Pods-CSSDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSSDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CSSDemo/Pods-CSSDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		7A2C5BA0E003E9523A56214E /* Pods_CSSDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CSSDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8367AF4A7A56C63A92F48C59 /* Pods-CSSDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSSDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-CSSDemo/Pods-CSSDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -91,10 +99,9 @@
 			isa = PBXGroup;
 			children = (
 				1EFE1C6D1B56966000396594 /* AppDelegate.swift */,
-				1EFE1C6F1B56966000396594 /* SelfFeedViewController.swift */,
-				1EFE1D2D1B59707A00396594 /* SelfFeedCollectionViewCell.swift */,
 				1EFE1D2F1B5977DB00396594 /* LoginViewController.swift */,
-				1EFE1D311B59B9D800396594 /* MediaDetailViewController.swift */,
+				1EFE1D331B59C05B00396594 /* Self Feed */,
+				1EFE1D381B59C0A000396594 /* Media Details */,
 				1EFE1C731B56966000396594 /* Main.storyboard */,
 				1EFE1C761B56966000396594 /* Images.xcassets */,
 				1EFE1C781B56966000396594 /* LaunchScreen.xib */,
@@ -126,6 +133,43 @@
 				1EFE1C841B56966000396594 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1EFE1D331B59C05B00396594 /* Self Feed */ = {
+			isa = PBXGroup;
+			children = (
+				1EFE1C6F1B56966000396594 /* SelfFeedViewController.swift */,
+				1EFE1D2D1B59707A00396594 /* SelfFeedCollectionViewCell.swift */,
+			);
+			name = "Self Feed";
+			sourceTree = "<group>";
+		};
+		1EFE1D381B59C0A000396594 /* Media Details */ = {
+			isa = PBXGroup;
+			children = (
+				1EFE1D311B59B9D800396594 /* MediaDetailViewController.swift */,
+				1EFE1D3E1B59C0F400396594 /* Likes */,
+				1EFE1D3D1B59C0EB00396594 /* Comments */,
+			);
+			name = "Media Details";
+			sourceTree = "<group>";
+		};
+		1EFE1D3D1B59C0EB00396594 /* Comments */ = {
+			isa = PBXGroup;
+			children = (
+				1EFE1D341B59C08100396594 /* CommentsViewController.swift */,
+				1EFE1D3B1B59C0E200396594 /* CommentTableViewCell.swift */,
+			);
+			name = Comments;
+			sourceTree = "<group>";
+		};
+		1EFE1D3E1B59C0F400396594 /* Likes */ = {
+			isa = PBXGroup;
+			children = (
+				1EFE1D361B59C08F00396594 /* LikesViewController.swift */,
+				1EFE1D391B59C0D700396594 /* LikeTableViewCell.swift */,
+			);
+			name = Likes;
 			sourceTree = "<group>";
 		};
 		380A5698671B6E792549CEDD /* Frameworks */ = {
@@ -296,8 +340,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EFE1D371B59C08F00396594 /* LikesViewController.swift in Sources */,
 				1EFE1D321B59B9D800396594 /* MediaDetailViewController.swift in Sources */,
+				1EFE1D3A1B59C0D700396594 /* LikeTableViewCell.swift in Sources */,
 				1EFE1D2E1B59707A00396594 /* SelfFeedCollectionViewCell.swift in Sources */,
+				1EFE1D3C1B59C0E200396594 /* CommentTableViewCell.swift in Sources */,
+				1EFE1D351B59C08100396594 /* CommentsViewController.swift in Sources */,
 				1EFE1C701B56966000396594 /* SelfFeedViewController.swift in Sources */,
 				1EFE1D301B5977DB00396594 /* LoginViewController.swift in Sources */,
 				1EFE1C6E1B56966000396594 /* AppDelegate.swift in Sources */,

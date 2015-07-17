@@ -32,6 +32,11 @@ class MediaDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if self.dynamicType.dateFormatter == nil {
+            self.dynamicType.dateFormatter = NSDateFormatter()
+            self.dynamicType.dateFormatter.dateFormat = "dd.MM.yyyy"
+        }
 
         self.updateUI()
         // Do any additional setup after loading the view.
@@ -42,11 +47,7 @@ class MediaDetailViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    static var dateFormatter = NSDateFormatter() {
-        didSet {
-            dateFormatter.dateFormat = "dd:MM:yyyy"
-        }
-    }
+    static var dateFormatter: NSDateFormatter! = nil
     
     func updateUI() {
         if !self.isViewLoaded() {
@@ -61,14 +62,21 @@ class MediaDetailViewController: UIViewController {
             self.dateLabel.text = self.dynamicType.dateFormatter.stringFromDate(media.createdDate)
         }
     }
-    /*
+    
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "showLikes" {
+            if let likesController = segue.destinationViewController as? LikesViewController,
+                likedUsers = self.media?.likes as? [InstagramUser] {
+                    likesController.likedUsers = likedUsers
+            }
+        } else if segue.identifier == "showComments" {
+            if let commentsController = segue.destinationViewController as? CommentsViewController,
+                comments = self.media?.comments as? [InstagramComment] {
+                    commentsController.comments = comments
+            }
+        }
     }
-    */
 
 }
