@@ -7,8 +7,26 @@
 //
 
 import UIKit
+import InstagramKit
+import AFNetworking
 
 class LikeTableViewCell: UITableViewCell {
+    
+    // MARK: - IBOutlets
+    
+    @IBOutlet private weak var fullUserNameLabel: UILabel!
+    @IBOutlet private weak var uniqueUserNameLabel: UILabel!
+    @IBOutlet private weak var userImageView: UIImageView!
+    
+    // MARK: - User
+    
+    var user: InstagramUser? = nil {
+        didSet {
+            self.updateUI()
+        }
+    }
+    
+    // MARK: - UITableViewCell
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -19,6 +37,15 @@ class LikeTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    
+    func updateUI() {
+        if let user = self.user {
+            self.fullUserNameLabel.text = user.fullName
+            self.uniqueUserNameLabel.text = user.username
+            self.userImageView.setImageWithURL(user.profilePictureURL)
+        }
     }
 
 }

@@ -3,6 +3,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Master-->
@@ -145,16 +146,51 @@
         <scene sceneID="0EL-hp-0ke">
             <objects>
                 <tableViewController title="Likes" id="Pf6-Iz-LSF" customClass="LikesViewController" customModule="CSSDemo" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="aUd-Qs-zv5">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="22" sectionFooterHeight="22" id="aUd-Qs-zv5">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="pw0-ke-ewH">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="likeCell" rowHeight="66" id="pw0-ke-ewH" customClass="LikeTableViewCell" customModule="CSSDemo" customModuleProvider="target">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pw0-ke-ewH" id="ITk-Ri-nVG">
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pKU-2a-HKJ">
+                                            <rect key="frame" x="8" y="8" width="49.5" height="49.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="50" id="eKm-Kj-lTL"/>
+                                                <constraint firstAttribute="width" secondItem="pKU-2a-HKJ" secondAttribute="height" multiplier="1:1" id="m0r-8a-dzt"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dmytry Osipa" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L71-7J-xyI">
+                                            <rect key="frame" x="67" y="8" width="104.5" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@bomjkolyadun" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ohf-OO-lsX">
+                                            <rect key="frame" x="67.5" y="27" width="122" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Ohf-OO-lsX" firstAttribute="leading" secondItem="L71-7J-xyI" secondAttribute="leading" id="48N-PO-bQA"/>
+                                        <constraint firstItem="pKU-2a-HKJ" firstAttribute="leading" secondItem="ITk-Ri-nVG" secondAttribute="leadingMargin" id="QpT-UC-9qZ"/>
+                                        <constraint firstItem="Ohf-OO-lsX" firstAttribute="top" secondItem="L71-7J-xyI" secondAttribute="bottom" constant="-1" id="Sel-RG-4BD"/>
+                                        <constraint firstItem="L71-7J-xyI" firstAttribute="top" secondItem="pKU-2a-HKJ" secondAttribute="top" id="Te1-f9-9bi"/>
+                                        <constraint firstItem="pKU-2a-HKJ" firstAttribute="top" secondItem="ITk-Ri-nVG" secondAttribute="topMargin" id="Yb4-ED-SQk"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="pKU-2a-HKJ" secondAttribute="bottom" id="mjW-eP-sLk"/>
+                                        <constraint firstItem="L71-7J-xyI" firstAttribute="leading" secondItem="pKU-2a-HKJ" secondAttribute="trailing" constant="10" id="vb3-rM-VPN"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="fullUserNameLabel" destination="L71-7J-xyI" id="X0S-6W-ziR"/>
+                                    <outlet property="uniqueUserNameLabel" destination="Ohf-OO-lsX" id="aC7-y6-ONY"/>
+                                    <outlet property="userImageView" destination="pKU-2a-HKJ" id="bz0-2P-LXd"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -176,7 +212,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="hf1-kS-RXC">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="commentCell" id="hf1-kS-RXC" customClass="CommentTableViewCell" customModule="CSSDemo" customModuleProvider="target">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hf1-kS-RXC" id="CoX-JO-1NY">
                                     <autoresizingMask key="autoresizingMask"/>
