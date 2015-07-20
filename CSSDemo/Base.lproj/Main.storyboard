@@ -207,16 +207,63 @@
         <scene sceneID="Lkk-Ub-zmM">
             <objects>
                 <tableViewController title="Comments" id="Oev-a9-sge" customClass="CommentsViewController" customModule="CSSDemo" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="5zs-2l-0NI">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="86" sectionHeaderHeight="22" sectionFooterHeight="22" id="5zs-2l-0NI">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="commentCell" id="hf1-kS-RXC" customClass="CommentTableViewCell" customModule="CSSDemo" customModuleProvider="target">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="commentCell" rowHeight="76" id="hf1-kS-RXC" customClass="CommentTableViewCell" customModule="CSSDemo" customModuleProvider="target">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hf1-kS-RXC" id="CoX-JO-1NY">
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xgq-DD-RMI">
+                                            <rect key="frame" x="76" y="8" width="42" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vu5-ji-6C5">
+                                            <rect key="frame" x="550" y="8" width="42" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eSH-Cx-CDr">
+                                            <rect key="frame" x="76" y="30" width="89" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Xpo-lP-cE9">
+                                            <rect key="frame" x="8" y="8" width="60" height="60"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="Xpo-lP-cE9" secondAttribute="height" multiplier="1:1" id="NwR-pH-oOm"/>
+                                                <constraint firstAttribute="width" constant="60" id="idp-9Y-5Ia"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="eSH-Cx-CDr" secondAttribute="bottom" priority="999" id="311-Ky-unP"/>
+                                        <constraint firstItem="Xgq-DD-RMI" firstAttribute="top" secondItem="Xpo-lP-cE9" secondAttribute="top" id="3Sg-Zp-sTs"/>
+                                        <constraint firstItem="eSH-Cx-CDr" firstAttribute="top" secondItem="Xgq-DD-RMI" secondAttribute="bottom" constant="2" id="7c1-YH-uEB"/>
+                                        <constraint firstItem="eSH-Cx-CDr" firstAttribute="leading" secondItem="Xgq-DD-RMI" secondAttribute="leading" id="Avx-pg-djz"/>
+                                        <constraint firstItem="Vu5-ji-6C5" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Xgq-DD-RMI" secondAttribute="trailing" constant="8" id="D4D-Gh-zQ5"/>
+                                        <constraint firstItem="Vu5-ji-6C5" firstAttribute="trailing" secondItem="CoX-JO-1NY" secondAttribute="trailingMargin" id="EMx-GN-dp4"/>
+                                        <constraint firstItem="Xgq-DD-RMI" firstAttribute="leading" secondItem="Xpo-lP-cE9" secondAttribute="trailing" constant="8" id="Ejl-Nj-eo8"/>
+                                        <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="Xpo-lP-cE9" secondAttribute="bottom" id="V2b-7u-IpS"/>
+                                        <constraint firstItem="Xgq-DD-RMI" firstAttribute="baseline" secondItem="Vu5-ji-6C5" secondAttribute="baseline" constant="-0.5" id="ZeT-Ls-mgo"/>
+                                        <constraint firstItem="eSH-Cx-CDr" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="Vu5-ji-6C5" secondAttribute="trailing" id="gPm-ti-BUe"/>
+                                        <constraint firstItem="Xpo-lP-cE9" firstAttribute="top" secondItem="CoX-JO-1NY" secondAttribute="topMargin" id="ivl-nD-PgS"/>
+                                        <constraint firstItem="Xpo-lP-cE9" firstAttribute="leading" secondItem="CoX-JO-1NY" secondAttribute="leadingMargin" id="yRe-rv-J53"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="authorFullNameLabel" destination="Xgq-DD-RMI" id="0aH-h8-aL3"/>
+                                    <outlet property="authorImageView" destination="Xpo-lP-cE9" id="zam-Um-MIc"/>
+                                    <outlet property="commentDateLabel" destination="Vu5-ji-6C5" id="fiC-8o-bJ4"/>
+                                    <outlet property="commentTextLabel" destination="eSH-Cx-CDr" id="ebY-X3-z2U"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

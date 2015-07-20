@@ -39,6 +39,7 @@ class LikeTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    // MARK: -
     
     func updateUI() {
         if let user = self.user {

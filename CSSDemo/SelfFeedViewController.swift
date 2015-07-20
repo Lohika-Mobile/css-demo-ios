@@ -21,6 +21,12 @@ class SelfFeedViewController: UICollectionViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        InstagramEngine.sharedEngine().getSelfUserDetailsWithSuccess({ (user: InstagramUser!) -> Void in
+            self.title = user.username
+            }, failure: { (error: NSError!, statusCode: Int) -> Void in
+            NSLog("Failed to get current user: \(error), status: \(statusCode)")
+        })
     }
     
     override func viewWillAppear(animated: Bool) {
