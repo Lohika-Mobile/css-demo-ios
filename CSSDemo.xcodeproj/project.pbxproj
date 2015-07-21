@@ -9,6 +9,14 @@
 /* Begin PBXBuildFile section */
 		1E54065A1B5EDD93002D7E7D /* UserDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5406591B5EDD93002D7E7D /* UserDetailsViewController.swift */; };
 		1E6E7F591B5EEB6E005923B1 /* IntCounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6E7F581B5EEB6E005923B1 /* IntCounterView.swift */; };
+		1E6E7F751B5EFD68005923B1 /* Blogger Sans-Bold Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1E6E7F6D1B5EFD68005923B1 /* Blogger Sans-Bold Italic.ttf */; };
+		1E6E7F761B5EFD68005923B1 /* Blogger Sans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1E6E7F6E1B5EFD68005923B1 /* Blogger Sans-Bold.ttf */; };
+		1E6E7F771B5EFD68005923B1 /* Blogger Sans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1E6E7F6F1B5EFD68005923B1 /* Blogger Sans-Italic.ttf */; };
+		1E6E7F781B5EFD68005923B1 /* Blogger Sans-Light Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1E6E7F701B5EFD68005923B1 /* Blogger Sans-Light Italic.ttf */; };
+		1E6E7F791B5EFD68005923B1 /* Blogger Sans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1E6E7F711B5EFD68005923B1 /* Blogger Sans-Light.ttf */; };
+		1E6E7F7A1B5EFD68005923B1 /* Blogger Sans-Medium Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1E6E7F721B5EFD68005923B1 /* Blogger Sans-Medium Italic.ttf */; };
+		1E6E7F7B1B5EFD68005923B1 /* Blogger Sans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1E6E7F731B5EFD68005923B1 /* Blogger Sans-Medium.ttf */; };
+		1E6E7F7C1B5EFD68005923B1 /* Blogger Sans.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1E6E7F741B5EFD68005923B1 /* Blogger Sans.ttf */; };
 		1EFE1C6E1B56966000396594 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EFE1C6D1B56966000396594 /* AppDelegate.swift */; };
 		1EFE1C701B56966000396594 /* SelfFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EFE1C6F1B56966000396594 /* SelfFeedViewController.swift */; };
 		1EFE1C751B56966000396594 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EFE1C731B56966000396594 /* Main.storyboard */; };
@@ -38,6 +46,14 @@
 /* Begin PBXFileReference section */
 		1E5406591B5EDD93002D7E7D /* UserDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailsViewController.swift; sourceTree = "<group>"; };
 		1E6E7F581B5EEB6E005923B1 /* IntCounterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntCounterView.swift; sourceTree = "<group>"; };
+		1E6E7F6D1B5EFD68005923B1 /* Blogger Sans-Bold Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Blogger Sans-Bold Italic.ttf"; path = "CSSDemo/Fonts/Blogger Sans-Bold Italic.ttf"; sourceTree = SOURCE_ROOT; };
+		1E6E7F6E1B5EFD68005923B1 /* Blogger Sans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Blogger Sans-Bold.ttf"; path = "CSSDemo/Fonts/Blogger Sans-Bold.ttf"; sourceTree = SOURCE_ROOT; };
+		1E6E7F6F1B5EFD68005923B1 /* Blogger Sans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Blogger Sans-Italic.ttf"; path = "CSSDemo/Fonts/Blogger Sans-Italic.ttf"; sourceTree = SOURCE_ROOT; };
+		1E6E7F701B5EFD68005923B1 /* Blogger Sans-Light Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Blogger Sans-Light Italic.ttf"; path = "CSSDemo/Fonts/Blogger Sans-Light Italic.ttf"; sourceTree = SOURCE_ROOT; };
+		1E6E7F711B5EFD68005923B1 /* Blogger Sans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Blogger Sans-Light.ttf"; path = "CSSDemo/Fonts/Blogger Sans-Light.ttf"; sourceTree = SOURCE_ROOT; };
+		1E6E7F721B5EFD68005923B1 /* Blogger Sans-Medium Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Blogger Sans-Medium Italic.ttf"; path = "CSSDemo/Fonts/Blogger Sans-Medium Italic.ttf"; sourceTree = SOURCE_ROOT; };
+		1E6E7F731B5EFD68005923B1 /* Blogger Sans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Blogger Sans-Medium.ttf"; path = "CSSDemo/Fonts/Blogger Sans-Medium.ttf"; sourceTree = SOURCE_ROOT; };
+		1E6E7F741B5EFD68005923B1 /* Blogger Sans.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Blogger Sans.ttf"; path = "CSSDemo/Fonts/Blogger Sans.ttf"; sourceTree = SOURCE_ROOT; };
 		1EFE1C681B56966000396594 /* CSSDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CSSDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EFE1C6C1B56966000396594 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1EFE1C6D1B56966000396594 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +104,30 @@
 			name = UserDetails;
 			sourceTree = "<group>";
 		};
+		1E6E7F5B1B5EFD2F005923B1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1E6E7F6C1B5EFD47005923B1 /* Fonts */,
+			);
+			name = Resources;
+			path = "OT-tt";
+			sourceTree = "<group>";
+		};
+		1E6E7F6C1B5EFD47005923B1 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				1E6E7F6D1B5EFD68005923B1 /* Blogger Sans-Bold Italic.ttf */,
+				1E6E7F6E1B5EFD68005923B1 /* Blogger Sans-Bold.ttf */,
+				1E6E7F6F1B5EFD68005923B1 /* Blogger Sans-Italic.ttf */,
+				1E6E7F701B5EFD68005923B1 /* Blogger Sans-Light Italic.ttf */,
+				1E6E7F711B5EFD68005923B1 /* Blogger Sans-Light.ttf */,
+				1E6E7F721B5EFD68005923B1 /* Blogger Sans-Medium Italic.ttf */,
+				1E6E7F731B5EFD68005923B1 /* Blogger Sans-Medium.ttf */,
+				1E6E7F741B5EFD68005923B1 /* Blogger Sans.ttf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
 		1EFE1C5F1B56966000396594 = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +159,7 @@
 				1EFE1C731B56966000396594 /* Main.storyboard */,
 				1EFE1C761B56966000396594 /* Images.xcassets */,
 				1EFE1C781B56966000396594 /* LaunchScreen.xib */,
+				1E6E7F5B1B5EFD2F005923B1 /* Resources */,
 				1EFE1C6B1B56966000396594 /* Supporting Files */,
 			);
 			path = CSSDemo;
@@ -286,9 +327,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E6E7F7B1B5EFD68005923B1 /* Blogger Sans-Medium.ttf in Resources */,
+				1E6E7F7C1B5EFD68005923B1 /* Blogger Sans.ttf in Resources */,
 				1EFE1C751B56966000396594 /* Main.storyboard in Resources */,
 				1EFE1C7A1B56966000396594 /* LaunchScreen.xib in Resources */,
+				1E6E7F7A1B5EFD68005923B1 /* Blogger Sans-Medium Italic.ttf in Resources */,
 				1EFE1C771B56966000396594 /* Images.xcassets in Resources */,
+				1E6E7F781B5EFD68005923B1 /* Blogger Sans-Light Italic.ttf in Resources */,
+				1E6E7F751B5EFD68005923B1 /* Blogger Sans-Bold Italic.ttf in Resources */,
+				1E6E7F761B5EFD68005923B1 /* Blogger Sans-Bold.ttf in Resources */,
+				1E6E7F791B5EFD68005923B1 /* Blogger Sans-Light.ttf in Resources */,
+				1E6E7F771B5EFD68005923B1 /* Blogger Sans-Italic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
