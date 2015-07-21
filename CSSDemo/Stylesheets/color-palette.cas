@@ -1,5 +1,5 @@
 $color-tint = #73A2B1;
-$b = #628A5C;
+$color-user = #628A5C;
 $c = #A2BF8C;
 $color-background = #F0EACF;
 $e = #DC9C89;

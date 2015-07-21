@@ -37,6 +37,7 @@ class UserDetailsViewController: UIViewController {
         self.userProfileImageView = UIImageView()
         self.userProfileImageView.contentMode = .ScaleAspectFill
         self.userProfileImageView.setTranslatesAutoresizingMaskIntoConstraints(false)
+        self.userProfileImageView.cas_styleClass = "avatar-big"
         self.view.addSubview(self.userProfileImageView)
         
         self.fullNameLabel = UILabel()

@@ -1,11 +1,11 @@
 /* Regular fonts */
-$font-regular = "Blogger Sans" 20.0;
-$font-regular-bold = "Blogger Sans-Bold" 20.0;
+$font-regular = "BloggerSans" 18.0;
+$font-regular-bold = "BloggerSans-Bold" 18.0;
 
 /* Small fonts */
-$font-small = "Blogger Sans" 12.0;
-$font-small-bold = "Blogger Sans-Bold" 12.0;
+$font-small = "BloggerSans" 12.0;
+$font-small-bold = "BloggerSans-Bold" 12.0;
 
 /* Title fonts */
-$font-title-regular = "Blogger Sans-Medium" 18.0f;
-$font-title-small = "Blogger Sans-Medium" 12.0f;
+$font-title-regular = "BloggerSans-Medium" 22.0f;
+$font-title-small = "BloggerSans-Medium" 12.0f;

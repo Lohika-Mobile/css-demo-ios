@@ -4,7 +4,7 @@
 UINavigationBar {
     tintColor: $color-tint;
     titleTextAttributes: @{
-        font: $font-regular;
+        font: $font-title-regular;
         foreground-color: $color-text;        
     };
 }
@@ -13,5 +13,50 @@ UIBarButtonItem {
     titleTextAttributes: @{
         font: $font-regular;
     };    
+}
+
+UIImageView.avatar-big, UIImageView.avatar-small {
+    layer: @{
+        borderWidth: 1;
+        borderColor: black;
+    };
+    clipsToBounds: true;
+}
+
+
+UIImageView.avatar-big {
+    layer: @{
+        cornerRadius: 10;
+    };
+}
+
+UIImageView.avatar-small {
+    layer: @{
+        cornerRadius: 5;
+    };
+}
+
+UILabel.date {
+    
+}
+
+UILabel.username {
+    font: $font-regular-bold;
+    textColor: $color-user;
+}
+
+UILabel.fullname {
+    font: $font-regular;
+    textColor: $color-text;
+}
+
+UILabel.counter {
+    font: $font-regular-bold;
+    textColor: $color-text;
+}
+
+UILabel.text {
+    font: $font-regular;
+    textColor: $color-text;
 }
 
