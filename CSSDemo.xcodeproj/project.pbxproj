@@ -17,6 +17,9 @@
 		1E6E7F7A1B5EFD68005923B1 /* Blogger Sans-Medium Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1E6E7F721B5EFD68005923B1 /* Blogger Sans-Medium Italic.ttf */; };
 		1E6E7F7B1B5EFD68005923B1 /* Blogger Sans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1E6E7F731B5EFD68005923B1 /* Blogger Sans-Medium.ttf */; };
 		1E6E7F7C1B5EFD68005923B1 /* Blogger Sans.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1E6E7F741B5EFD68005923B1 /* Blogger Sans.ttf */; };
+		1E6E7F7F1B5F0246005923B1 /* stylesheet.cas in Resources */ = {isa = PBXBuildFile; fileRef = 1E6E7F7E1B5F0246005923B1 /* stylesheet.cas */; };
+		1E6E7F821B5F0275005923B1 /* fonts.cas in Resources */ = {isa = PBXBuildFile; fileRef = 1E6E7F811B5F0275005923B1 /* fonts.cas */; };
+		1E6E7F841B5F06FB005923B1 /* color-palette.cas in Resources */ = {isa = PBXBuildFile; fileRef = 1E6E7F831B5F06FB005923B1 /* color-palette.cas */; };
 		1EFE1C6E1B56966000396594 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EFE1C6D1B56966000396594 /* AppDelegate.swift */; };
 		1EFE1C701B56966000396594 /* SelfFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EFE1C6F1B56966000396594 /* SelfFeedViewController.swift */; };
 		1EFE1C751B56966000396594 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EFE1C731B56966000396594 /* Main.storyboard */; };
@@ -54,6 +57,9 @@
 		1E6E7F721B5EFD68005923B1 /* Blogger Sans-Medium Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Blogger Sans-Medium Italic.ttf"; path = "CSSDemo/Fonts/Blogger Sans-Medium Italic.ttf"; sourceTree = SOURCE_ROOT; };
 		1E6E7F731B5EFD68005923B1 /* Blogger Sans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Blogger Sans-Medium.ttf"; path = "CSSDemo/Fonts/Blogger Sans-Medium.ttf"; sourceTree = SOURCE_ROOT; };
 		1E6E7F741B5EFD68005923B1 /* Blogger Sans.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Blogger Sans.ttf"; path = "CSSDemo/Fonts/Blogger Sans.ttf"; sourceTree = SOURCE_ROOT; };
+		1E6E7F7E1B5F0246005923B1 /* stylesheet.cas */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = stylesheet.cas; path = CSSDemo/Stylesheets/stylesheet.cas; sourceTree = SOURCE_ROOT; };
+		1E6E7F811B5F0275005923B1 /* fonts.cas */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = fonts.cas; path = CSSDemo/Stylesheets/fonts.cas; sourceTree = SOURCE_ROOT; };
+		1E6E7F831B5F06FB005923B1 /* color-palette.cas */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "color-palette.cas"; path = "CSSDemo/Stylesheets/color-palette.cas"; sourceTree = SOURCE_ROOT; };
 		1EFE1C681B56966000396594 /* CSSDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CSSDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EFE1C6C1B56966000396594 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1EFE1C6D1B56966000396594 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -108,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				1E6E7F6C1B5EFD47005923B1 /* Fonts */,
+				1E6E7F801B5F024B005923B1 /* Stylesheets */,
 			);
 			name = Resources;
 			path = "OT-tt";
@@ -126,6 +133,16 @@
 				1E6E7F741B5EFD68005923B1 /* Blogger Sans.ttf */,
 			);
 			name = Fonts;
+			sourceTree = "<group>";
+		};
+		1E6E7F801B5F024B005923B1 /* Stylesheets */ = {
+			isa = PBXGroup;
+			children = (
+				1E6E7F7E1B5F0246005923B1 /* stylesheet.cas */,
+				1E6E7F831B5F06FB005923B1 /* color-palette.cas */,
+				1E6E7F811B5F0275005923B1 /* fonts.cas */,
+			);
+			name = Stylesheets;
 			sourceTree = "<group>";
 		};
 		1EFE1C5F1B56966000396594 = {
@@ -332,12 +349,15 @@
 				1EFE1C751B56966000396594 /* Main.storyboard in Resources */,
 				1EFE1C7A1B56966000396594 /* LaunchScreen.xib in Resources */,
 				1E6E7F7A1B5EFD68005923B1 /* Blogger Sans-Medium Italic.ttf in Resources */,
+				1E6E7F7F1B5F0246005923B1 /* stylesheet.cas in Resources */,
 				1EFE1C771B56966000396594 /* Images.xcassets in Resources */,
+				1E6E7F821B5F0275005923B1 /* fonts.cas in Resources */,
 				1E6E7F781B5EFD68005923B1 /* Blogger Sans-Light Italic.ttf in Resources */,
 				1E6E7F751B5EFD68005923B1 /* Blogger Sans-Bold Italic.ttf in Resources */,
 				1E6E7F761B5EFD68005923B1 /* Blogger Sans-Bold.ttf in Resources */,
 				1E6E7F791B5EFD68005923B1 /* Blogger Sans-Light.ttf in Resources */,
 				1E6E7F771B5EFD68005923B1 /* Blogger Sans-Italic.ttf in Resources */,
+				1E6E7F841B5F06FB005923B1 /* color-palette.cas in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

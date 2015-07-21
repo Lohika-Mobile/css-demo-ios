@@ -27,7 +27,6 @@ class LoginViewController: UIViewController {
         let appSecret = "7b11992a61ec4081a90e1a4a016d4202"
         
         let url = instagramEngine.authorizarionURLForScope(.Basic)
-//        let url = "https://instagram.com/oauth/authorize/?client_id=[Client ID]&redirect_uri=[Redirect URI]&response_type=token"
         let request = NSURLRequest(URL: url)
         self.webView.loadRequest(request)
     }
@@ -36,17 +35,6 @@ class LoginViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
     
 }
 

@@ -1,0 +1,17 @@
+@import "fonts.cas";
+@import "color-palette.cas";
+
+UINavigationBar {
+    tintColor: $color-tint;
+    titleTextAttributes: @{
+        font: $font-regular;
+        foreground-color: $color-text;        
+    };
+}
+
+UIBarButtonItem {
+    titleTextAttributes: @{
+        font: $font-regular;
+    };    
+}
+
