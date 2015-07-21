@@ -23,7 +23,7 @@ class SelfFeedViewController: UICollectionViewController {
         super.viewDidLoad()
         
         InstagramEngine.sharedEngine().getSelfUserDetailsWithSuccess({ (user: InstagramUser!) -> Void in
-            self.title = user.username
+            self.currentUser = user
             }, failure: { (error: NSError!, statusCode: Int) -> Void in
             NSLog("Failed to get current user: \(error), status: \(statusCode)")
         })
@@ -49,12 +49,27 @@ class SelfFeedViewController: UICollectionViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    // MARK: - 
+    
+    func updateUI() {
+        if let user = self.currentUser {
+            self.title = user.username
+        } else {
+            self.title = "Self feed"
+        }
+    }
+    
     // MARK: - Instagram data
     
     private let pageSize = 20
     private var mediaObjects: [InstagramMedia] = []
     private var paginationInfo: InstagramPaginationInfo? = nil
     
+    private var currentUser: InstagramUser? = nil {
+        didSet {
+            self.updateUI()
+        }
+    }
     
     private func hasNextPage() -> Bool {
         return self.paginationInfo != nil || self.mediaObjects.count == 0
@@ -93,6 +108,9 @@ class SelfFeedViewController: UICollectionViewController {
                     controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem()
                     controller.navigationItem.leftItemsSupplementBackButton = true
             }
+        } else if segue.identifier == "showCurrentUserProfile" {
+            let controller = segue.destinationViewController as! UserDetailsViewController
+            controller.user = self.currentUser
         }
     }
     

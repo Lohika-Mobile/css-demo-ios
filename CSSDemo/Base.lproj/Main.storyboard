@@ -6,6 +6,25 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
+        <!--User Details View Controller-->
+        <scene sceneID="zme-15-FGl">
+            <objects>
+                <viewController id="ecS-ld-QdL" customClass="UserDetailsViewController" customModule="CSSDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UKi-dm-Ufd"/>
+                        <viewControllerLayoutGuide type="bottom" id="ARQ-cF-Kef"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qSs-w3-pz7">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dlk-kv-tNN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1422" y="-1322"/>
+        </scene>
         <!--Master-->
         <scene sceneID="pY4-Hu-kfo">
             <objects>
@@ -201,7 +220,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qkp-Un-Uay" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1413" y="129"/>
+            <point key="canvasLocation" x="1422" y="129"/>
         </scene>
         <!--Comments-->
         <scene sceneID="Lkk-Ub-zmM">
@@ -274,7 +293,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v36-br-aJ2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1413" y="879"/>
+            <point key="canvasLocation" x="1422" y="879"/>
         </scene>
         <!--Split View Controller-->
         <scene sceneID="Nki-YV-4Qg">
@@ -344,7 +363,13 @@
                             <outlet property="delegate" destination="yk3-p8-4nG" id="F2x-He-X3B"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" id="Zb5-mu-hsU"/>
+                    <navigationItem key="navigationItem" id="Zb5-mu-hsU">
+                        <barButtonItem key="leftBarButtonItem" title="Profile" id="cp9-Q0-Wvu">
+                            <connections>
+                                <segue destination="ecS-ld-QdL" kind="show" identifier="showCurrentUserProfile" id="V2p-f7-dHR"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <segue destination="t17-CD-W8n" kind="presentation" identifier="showLogin" id="VDL-gE-Mdh"/>
                     </connections>
@@ -367,7 +392,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ldx-9H-bOD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1451" y="-630"/>
+            <point key="canvasLocation" x="1422" y="-630"/>
         </scene>
         <!--Login-->
         <scene sceneID="XQh-ug-yGy">
