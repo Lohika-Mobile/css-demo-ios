@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E3F36321B6043DD0096A688 /* UIColor+Demo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3F36311B6043DD0096A688 /* UIColor+Demo.swift */; };
+		1E3F36351B6045AE0096A688 /* UIFont+Demo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3F36341B6045AE0096A688 /* UIFont+Demo.swift */; };
 		1E54065A1B5EDD93002D7E7D /* UserDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5406591B5EDD93002D7E7D /* UserDetailsViewController.swift */; };
 		1E6E7F591B5EEB6E005923B1 /* IntCounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6E7F581B5EEB6E005923B1 /* IntCounterView.swift */; };
 		1E6E7F751B5EFD68005923B1 /* Blogger Sans-Bold Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1E6E7F6D1B5EFD68005923B1 /* Blogger Sans-Bold Italic.ttf */; };
@@ -44,6 +46,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E3F36311B6043DD0096A688 /* UIColor+Demo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Demo.swift"; sourceTree = "<group>"; };
+		1E3F36341B6045AE0096A688 /* UIFont+Demo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Demo.swift"; sourceTree = "<group>"; };
 		1E5406591B5EDD93002D7E7D /* UserDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailsViewController.swift; sourceTree = "<group>"; };
 		1E6E7F581B5EEB6E005923B1 /* IntCounterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntCounterView.swift; sourceTree = "<group>"; };
 		1E6E7F6D1B5EFD68005923B1 /* Blogger Sans-Bold Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Blogger Sans-Bold Italic.ttf"; path = "CSSDemo/Fonts/Blogger Sans-Bold Italic.ttf"; sourceTree = SOURCE_ROOT; };
@@ -95,13 +99,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1E6E7F5A1B5EEB72005923B1 /* UserDetails */ = {
+		1E3F36331B6043EA0096A688 /* Style Factory */ = {
+			isa = PBXGroup;
+			children = (
+				1E3F36311B6043DD0096A688 /* UIColor+Demo.swift */,
+				1E3F36341B6045AE0096A688 /* UIFont+Demo.swift */,
+			);
+			name = "Style Factory";
+			sourceTree = "<group>";
+		};
+		1E6E7F5A1B5EEB72005923B1 /* User Details */ = {
 			isa = PBXGroup;
 			children = (
 				1E5406591B5EDD93002D7E7D /* UserDetailsViewController.swift */,
 				1E6E7F581B5EEB6E005923B1 /* IntCounterView.swift */,
 			);
-			name = UserDetails;
+			name = "User Details";
 			sourceTree = "<group>";
 		};
 		1E6E7F5B1B5EFD2F005923B1 /* Resources */ = {
@@ -152,8 +165,9 @@
 			isa = PBXGroup;
 			children = (
 				1EFE1C6D1B56966000396594 /* AppDelegate.swift */,
+				1E3F36331B6043EA0096A688 /* Style Factory */,
 				1EFE1D2F1B5977DB00396594 /* LoginViewController.swift */,
-				1E6E7F5A1B5EEB72005923B1 /* UserDetails */,
+				1E6E7F5A1B5EEB72005923B1 /* User Details */,
 				1EFE1D331B59C05B00396594 /* Self Feed */,
 				1EFE1D381B59C0A000396594 /* Media Details */,
 				1EFE1C731B56966000396594 /* Main.storyboard */,
@@ -410,6 +424,8 @@
 				1EFE1D3C1B59C0E200396594 /* CommentTableViewCell.swift in Sources */,
 				1EFE1D351B59C08100396594 /* CommentsViewController.swift in Sources */,
 				1EFE1C701B56966000396594 /* SelfFeedViewController.swift in Sources */,
+				1E3F36321B6043DD0096A688 /* UIColor+Demo.swift in Sources */,
+				1E3F36351B6045AE0096A688 /* UIFont+Demo.swift in Sources */,
 				1EFE1D301B5977DB00396594 /* LoginViewController.swift in Sources */,
 				1E6E7F591B5EEB6E005923B1 /* IntCounterView.swift in Sources */,
 				1EFE1C6E1B56966000396594 /* AppDelegate.swift in Sources */,
