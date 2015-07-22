@@ -55,10 +55,8 @@ class UserDetailsViewController: UIViewController {
         self.bioTextView = UITextView()
         self.bioTextView.setTranslatesAutoresizingMaskIntoConstraints(false)
         self.bioTextView.editable = false
-        self.bioTextView.dataDetectorTypes = .Link
-        self.bioTextView.textContainerInset = UIEdgeInsetsZero
-        self.bioTextView.textContainer.lineFragmentPadding = 0;
-        self.bioTextView.cas_styleClass = "text"
+        self.bioTextView.dataDetectorTypes = UIDataDetectorTypes.Link
+        self.bioTextView.cas_styleClass = "text-long"
         self.view.addSubview(self.bioTextView)
         
         

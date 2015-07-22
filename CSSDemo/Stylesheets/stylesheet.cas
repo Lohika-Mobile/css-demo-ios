@@ -58,12 +58,19 @@ UILabel.counter {
     textColor: $color-user-light;
 }
 
-UILabel.text, UITextView.text {
+UILabel.text, UITextView.text-long {
     font: $font-regular;
     textColor: $color-text;
     backgroundColor: clear;
 }
 
+UITextView.text-long {
+    editable: NO;
+    textContainerInset: 0;
+    textContainer: @{
+        lineFragmentPadding: 0;
+    };
+}
 
 UIButton.likes, UIButton.comments {
     tintColor: $color-user-light;
