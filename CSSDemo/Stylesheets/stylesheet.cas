@@ -24,7 +24,9 @@ UIImageView.avatar-big, UIImageView.avatar-small {
 }
 
 
-UIView.background {
+^UIView.background {
+    /*backgroundColor: #F0EACF;*/
+
     backgroundColor: $color-background;
 }
 
