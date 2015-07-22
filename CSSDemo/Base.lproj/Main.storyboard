@@ -69,6 +69,9 @@
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="cas_styleClass" value="likes"/>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <segue destination="Pf6-Iz-LSF" kind="show" identifier="showLikes" id="PhY-Uo-Zbz"/>
                                         </connections>
@@ -84,6 +87,9 @@
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="cas_styleClass" value="comments"/>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <segue destination="Oev-a9-sge" kind="show" identifier="showComments" id="azT-wa-ncT"/>
                                         </connections>
@@ -143,6 +149,9 @@
                                     <constraint firstItem="pJb-qt-HTr" firstAttribute="leading" secondItem="M37-ai-CfU" secondAttribute="trailing" constant="8" id="rRk-Dm-k7Y"/>
                                     <constraint firstItem="pJb-qt-HTr" firstAttribute="top" secondItem="kck-sl-t5I" secondAttribute="top" id="zbB-hQ-Q3L"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="cas_styleClass" value="background"/>
+                                </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -155,6 +164,9 @@
                             <constraint firstAttribute="trailing" secondItem="rc1-Fd-OMI" secondAttribute="trailing" id="coU-cM-VgJ"/>
                             <constraint firstItem="rc1-Fd-OMI" firstAttribute="leading" secondItem="svH-Pt-448" secondAttribute="leading" id="iof-UN-NWl"/>
                         </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="cas_styleClass" value="background"/>
+                        </userDefinedRuntimeAttributes>
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Detail" id="mOI-FS-AaM"/>
@@ -177,7 +189,6 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="22" sectionFooterHeight="22" id="aUd-Qs-zv5">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="likeCell" rowHeight="66" id="pw0-ke-ewH" customClass="LikeTableViewCell" customModule="CSSDemo" customModuleProvider="target">
                                 <autoresizingMask key="autoresizingMask"/>
@@ -222,7 +233,13 @@
                                         <constraint firstAttribute="bottomMargin" secondItem="pKU-2a-HKJ" secondAttribute="bottom" id="mjW-eP-sLk"/>
                                         <constraint firstItem="L71-7J-xyI" firstAttribute="leading" secondItem="pKU-2a-HKJ" secondAttribute="trailing" constant="10" id="vb3-rM-VPN"/>
                                     </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="cas_styleClass" value="background"/>
+                                    </userDefinedRuntimeAttributes>
                                 </tableViewCellContentView>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="cas_styleClass" value="background"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <outlet property="fullUserNameLabel" destination="L71-7J-xyI" id="X0S-6W-ziR"/>
                                     <outlet property="uniqueUserNameLabel" destination="Ohf-OO-lsX" id="aC7-y6-ONY"/>
@@ -230,6 +247,9 @@
                                 </connections>
                             </tableViewCell>
                         </prototypes>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="cas_styleClass" value="background"/>
+                        </userDefinedRuntimeAttributes>
                         <connections>
                             <outlet property="dataSource" destination="Pf6-Iz-LSF" id="vR3-Ie-eWc"/>
                             <outlet property="delegate" destination="Pf6-Iz-LSF" id="68h-2s-CXY"/>
@@ -304,6 +324,9 @@
                                         <constraint firstItem="Xpo-lP-cE9" firstAttribute="leading" secondItem="CoX-JO-1NY" secondAttribute="leadingMargin" id="yRe-rv-J53"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="cas_styleClass" value="background"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <outlet property="authorFullNameLabel" destination="Xgq-DD-RMI" id="0aH-h8-aL3"/>
                                     <outlet property="authorImageView" destination="Xpo-lP-cE9" id="zam-Um-MIc"/>
@@ -312,6 +335,9 @@
                                 </connections>
                             </tableViewCell>
                         </prototypes>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="cas_styleClass" value="background"/>
+                        </userDefinedRuntimeAttributes>
                         <connections>
                             <outlet property="dataSource" destination="Oev-a9-sge" id="0Ve-1S-KAy"/>
                             <outlet property="delegate" destination="Oev-a9-sge" id="4ON-Ce-zxe"/>

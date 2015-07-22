@@ -1,6 +1,6 @@
 $color-tint = #73A2B1;
 $color-user = #628A5C;
-$c = #A2BF8C;
+$color-user-light = #A2BF8C;
 $color-background = #F0EACF;
 $e = #DC9C89;
 $color-text = #606060;

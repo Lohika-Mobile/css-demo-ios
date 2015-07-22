@@ -24,6 +24,11 @@ UIImageView.avatar-big, UIImageView.avatar-small {
 }
 
 
+UIView.background {
+    backgroundColor: $color-background;
+}
+
+
 UIImageView.avatar-big {
     layer: @{
         cornerRadius: 10;
@@ -60,3 +65,18 @@ UILabel.text {
     textColor: $color-text;
 }
 
+
+
+
+UIButton.likes, UIButton.comments {
+    tintColor: $color-user-light;
+}
+
+UIButton.likes {
+    image[normal] = "like";
+}
+
+
+UIButton.comments {
+    image[normal] = "comment";
+}
