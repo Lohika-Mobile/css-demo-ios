@@ -15,21 +15,17 @@ UIBarButtonItem {
     };    
 }
 
-UIImageView.avatar-big, UIImageView.avatar-small {
-    layer: @{
-        borderWidth: 1;
-        borderColor: black;
-    };
-    clipsToBounds: true;
-}
-
-
 ^UIView.background {
-    /*backgroundColor: #F0EACF;*/
-
     backgroundColor: $color-background;
 }
 
+UIImageView.avatar-big, UIImageView.avatar-small {
+    layer: @{
+        borderWidth: 1;
+        borderColor: #707070;
+    };
+    clipsToBounds: true;
+}
 
 UIImageView.avatar-big {
     layer: @{
@@ -59,15 +55,14 @@ UILabel.fullname {
 
 UILabel.counter {
     font: $font-regular-bold;
-    textColor: $color-text;
+    textColor: $color-user-light;
 }
 
-UILabel.text {
+UILabel.text, UITextView.text {
     font: $font-regular;
     textColor: $color-text;
+    backgroundColor: clear;
 }
-
-
 
 
 UIButton.likes, UIButton.comments {
@@ -82,3 +77,14 @@ UIButton.likes {
 UIButton.comments {
     image[normal] = "comment";
 }
+
+UILabel.int-counter-caption {
+    font: $font-regular;
+    textColor: $color-text;
+}
+
+UILabel.int-counter-value {
+    font: $font-regular-bold;
+    textColor: $color-user-light;
+}
+

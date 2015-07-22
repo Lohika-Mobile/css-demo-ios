@@ -56,10 +56,12 @@ class IntCounterView: UIView {
     func setupSubviews() {
         self.captionLabel = UILabel()
         self.captionLabel.setTranslatesAutoresizingMaskIntoConstraints(false)
+        self.captionLabel.cas_styleClass = "int-counter-caption"
         self.addSubview(self.captionLabel)
         
         self.valueLabel = UILabel()
-        self.valueLabel.setTranslatesAutoresizingMaskIntoConstraints(false)
+        self.valueLabel.setTranslatesAutoresizingMaskIntoConstraints(false)        
+        self.valueLabel.cas_styleClass = "int-counter-value"
         self.addSubview(self.valueLabel)
     }
     

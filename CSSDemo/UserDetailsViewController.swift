@@ -34,6 +34,8 @@ class UserDetailsViewController: UIViewController {
     
     // MARK: Subviews Setup
     func setupSubviews() {
+        self.view.cas_styleClass = "background"
+        
         self.userProfileImageView = UIImageView()
         self.userProfileImageView.contentMode = .ScaleAspectFill
         self.userProfileImageView.setTranslatesAutoresizingMaskIntoConstraints(false)
@@ -42,10 +44,12 @@ class UserDetailsViewController: UIViewController {
         
         self.fullNameLabel = UILabel()
         self.fullNameLabel.setTranslatesAutoresizingMaskIntoConstraints(false)
+        self.fullNameLabel.cas_styleClass = "fullname"
         self.view.addSubview(self.fullNameLabel)
         
         self.userNameLabel = UILabel()
         self.userNameLabel.setTranslatesAutoresizingMaskIntoConstraints(false)
+        self.userNameLabel.cas_styleClass = "username"
         self.view.addSubview(self.userNameLabel)
         
         self.bioTextView = UITextView()
@@ -54,6 +58,7 @@ class UserDetailsViewController: UIViewController {
         self.bioTextView.dataDetectorTypes = .Link
         self.bioTextView.textContainerInset = UIEdgeInsetsZero
         self.bioTextView.textContainer.lineFragmentPadding = 0;
+        self.bioTextView.cas_styleClass = "text"
         self.view.addSubview(self.bioTextView)
         
         
