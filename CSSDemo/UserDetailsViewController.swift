@@ -72,6 +72,25 @@ class UserDetailsViewController: UIViewController {
         self.view.addSubview(self.followedByCounterView)
     }
     
+    func setupStyle() {
+        self.view.backgroundColor = UIColor.demo_BackgroundColor
+        
+        self.userProfileImageView.layer.cornerRadius = 10
+        self.userProfileImageView.layer.borderColor = UIColor.blackColor().CGColor
+        self.userProfileImageView.layer.borderWidth = 1
+        self.userProfileImageView.clipsToBounds = true
+        
+        self.fullNameLabel.font = UIFont.demo_regularFont
+        self.fullNameLabel.textColor = UIColor.demo_TextColor
+        
+        self.userNameLabel.font = UIFont.demo_regularBoldFont
+        self.userNameLabel.textColor = UIColor.demo_UserColor
+        
+        self.bioTextView.font = UIFont.demo_regularFont
+        self.bioTextView.textColor = UIColor.demo_TextColor
+        self.bioTextView.backgroundColor = UIColor.clearColor()
+    }
+    
     // MARK: Subviews Layout
     func setupLayout() {
         let views: [NSObject : AnyObject] = [
@@ -115,6 +134,7 @@ class UserDetailsViewController: UIViewController {
         
         self.setupSubviews()
         self.setupLayout()
+        self.setupStyle()
         self.updateUI()
     }
 
